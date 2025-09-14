@@ -6,7 +6,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
         
-        :root {
+        :root { 
             --primary-color: #1A374D; 
             --accent-color: #B68D40; 
             --background-light: #f8f9fa; 
@@ -16,6 +16,7 @@
             --agent-bubble-bg: #f1f3f5; 
             --success-green: #28a745; 
             --secure-red: #c82333;
+            --cancel-red: #dc3545;
         }
         
         * { box-sizing: border-box; }
@@ -224,12 +225,12 @@
         <div id="services-menu">
             <h3 class="services-header">خدمات استثنائية</h3>
             <div class="exceptional-services">
-                 <div class="service-card" onclick="startChatTopic('zakat_advisor')"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25l-9 5.25-9-5.25 M3 12.75l9 5.25 9-5.25 M3 12.75v-4.5L12 3l9 4.5v4.5 M21 8.25v8.5a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 16.75v-8.5" /></svg></div><h4>مستشار الزكاة</h4><p>احسب ووزع زكاتك بدقة عبر المنصات المعتمدة.</p></div>
-                 <div class="service-card" onclick="startChatTopic('event_planner')"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></svg></div><h4>مدبر السفرة</h4><p>أنشئ خطة ادخار وبطاقة مؤقتة لسفرك أو مناسباتك.</p></div>
-                 <div class="service-card" onclick="startChatTopic('digital_vault')"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg></div><h4>الخزنة الرقمية</h4><p>احفظ وثائقك الهامة وقيم أصولك في مكان واحد آمن.</p></div>
-                 <div class="service-card" onclick="startChatTopic('daily_brief')"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" /></svg></div><h4>موجزي اليومي</h4><p>نظرة سريعة وذكية على وضعك المالي لتبدأ يومك.</p></div>
-                 <div class="service-card" onclick="startChatTopic('emergency_cash')"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg></div><h4>سيولة طارئة</h4><p>تمويل فوري وآمن في حسابك خلال دقائق عند الحاجة.</p></div>
-                 <div class="service-card" onclick="startChatTopic('family_management')"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.042 2.72a3 3 0 01-4.682-2.72M12 18.72V19.5a4.5 4.5 0 01-9 0v-.78a9.094 9.094 0 013.741-.479m7.042 0a9.094 9.094 0 003.741.479m-7.042 0a9.094 9.094 0 01-3.741-.479M15 12a3 3 0 11-6 0 3 3 0 016 0zm6 0a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div><h4>إدارة أمور الأهل</h4><p>تحكم بمصاريف أفراد أسرتك وادعمهم ماليًا بسهولة.</p></div>
+                <div class="service-card" onclick="startChatTopic('zakat_advisor')"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25l-9 5.25-9-5.25 M3 12.75l9 5.25 9-5.25 M3 12.75v-4.5L12 3l9 4.5v4.5 M21 8.25v8.5a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 16.75v-8.5" /></svg></div><h4>مستشار الزكاة</h4><p>احسب ووزع زكاتك بدقة عبر المنصات المعتمدة.</p></div>
+                <div class="service-card" onclick="startChatTopic('event_planner')"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></svg></div><h4>مدبر السفرة</h4><p>أنشئ خطة ادخار وبطاقة مؤقتة لسفرك أو مناسباتك.</p></div>
+                <div class="service-card" onclick="startChatTopic('digital_vault')"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg></div><h4>الخزنة الرقمية</h4><p>احفظ وثائقك الهامة وقيم أصولك في مكان واحد آمن.</p></div>
+                <div class="service-card" onclick="startChatTopic('daily_brief')"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" /></svg></div><h4>موجزي اليومي</h4><p>نظرة سريعة وذكية على وضعك المالي لتبدأ يومك.</p></div>
+                <div class="service-card" onclick="startChatTopic('emergency_cash')"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg></div><h4>سيولة طارئة</h4><p>تمويل فوري وآمن في حسابك خلال دقائق عند الحاجة.</p></div>
+                <div class="service-card" onclick="startChatTopic('family_management')"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.042 2.72a3 3 0 01-4.682-2.72M12 18.72V19.5a4.5 4.5 0 01-9 0v-.78a9.094 9.094 0 013.741-.479m7.042 0a9.094 9.094 0 003.741.479m-7.042 0a9.094 9.094 0 01-3.741-.479M15 12a3 3 0 11-6 0 3 3 0 016 0zm6 0a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div><h4>إدارة أمور الأهل</h4><p>تحكم بمصاريف أفراد أسرتك وادعمهم ماليًا بسهولة.</p></div>
             </div>
             <h3 class="services-header">خدمات أساسية</h3>
             <div class="standard-services">
@@ -250,15 +251,15 @@
 <div id="dashboardModal" class="modal">
     <div class="modal-content">
         <div class="modal-header">
-             <button id="reset-btn" onclick="resetKPIs()">إعادة تعيين</button>
+            <button id="reset-btn" onclick="resetKPIs()">إعادة تعيين</button>
             <span class="close-btn" onclick="closeDashboard()">&times;</span>
         </div>
         <div class="dashboard">
-            <h2>لماذا ينقذك الوصي الرقمي من خسارة ٤١٠ مليون ريال؟</h2>
+            <h2>لماذا ينقذك الوصي الرقمي من خسارة عملاء التميز؟</h2>
             <p class="dashboard-subtitle">الأرقام تتحدث...</p>
             <div class="kpi-grid">
                 <div class="kpi-card"><div id="kpi-cost" class="value">0</div><div class="label">دقائق تم توفيرها</div></div>
-                <div class="kpi-card"><div id="kpi-revenue" class="value">0 ريال</div><div class="label">فرص إيرادات محتملة</div></div>
+                <div class="kpi-card"><div id="kpi-revenue" class="value">0 ريال</div><div class="label">فرص مالية محققة</div></div>
                 <div class="kpi-card"><div id="kpi-engagement" class="value">0</div><div class="label">خدمات منفذة</div></div>
                 <div class="kpi-card"><div id="kpi-security" class="value">0</div><div class="label">إجراءات أمنية</div></div>
             </div>
@@ -267,18 +268,15 @@
 </div>
 
 <script>
-    // ==========================================================
-    //         *** بداية التعديلات على الشيفرة البرمجية ***
-    // ==========================================================
     const conversationEngine = {
         end_flow: { steps: { start: { agentMessage: `<p>تامرني بشي ثاني طال عمرك؟</p>`, options: [{ text: "العودة للقائمة الرئيسية ↩️", action: "goBackToMenu" }] } } },
         statement: { value: { engagement: 1, cost: 2 }, steps: { start: { agentMessage: `<p>أبشر. هذا ملخص آخر 5 عمليات بحسابك الجاري:</p><ul><li>شراء من "تموينات الجزيرة": -75 ريال</li><li>تحويل من خالد: +2,500 ريال</li><li>سداد فاتورة كهرباء: -450 ريال</li></ul><p>تبيني أرسل لك كشف حساب مفصل لآخر 3 أشهر على إيميلك المسجل؟</p>`, options: [{ text: "إيه أرسل", nextStep: "send_email" }, { text: "لا، مشكور", nextStep: "end" }] }, send_email: { agentMessage: `<p>تم. أرسلته على إيميلك. يوصلك الحين.</p>`, nextStep: "end" }, end: { autoProceedTo: "end_flow" } } },
-        transfer: { value: { engagement: 1, cost: 3 }, steps: { start: { agentMessage: `<p>من تبي تحول له اليوم؟ هذولا المستفيدين اللي عندك.</p>`, options: [{ text: "خالد العبدالله", nextStep: "ask_amount" }] }, ask_amount: { agentMessage: `<p>كم ودك تحول لـ خالد؟</p><form id="transferForm"><input type="number" required><button type="submit">التالي</button></form>`, listenForForm: "transferForm" }, ask_otp: { value: { security: 1 }, isSecure: true, agentMessage: `<p>ممتاز. حرصًا على أمانك، أرسلت لك رمز تحقق على جوالك. عطني إياه لاهنت.</p><form id="otpForm"><input type="number" required><button type="submit">تأكيد</button></form>`, listenForForm: "otpForm" }, final: { agentMessage: `<p>تم التحويل. الله يبارك له.</p>`, nextStep: "end" }, end: { autoProceedTo: "end_flow" } } },
+        transfer: { value: { engagement: 1, cost: 3 }, steps: { start: { agentMessage: `<p>من تبي تحول له اليوم؟ هذولا المستفيدين اللي عندك.</p>`, options: [{ text: "خالد العبدالله", nextStep: "ask_amount" }, { text: "إلغاء والعودة ↩️", action: "goBackToMenu" }] }, ask_amount: { agentMessage: `<p>كم ودك تحول لـ خالد؟</p><form id="transferForm"><input type="number" required><button type="submit">التالي</button></form>`, listenForForm: "transferForm" }, ask_otp: { value: { security: 1 }, isSecure: true, agentMessage: `<p>ممتاز. حرصًا على أمانك، أرسلت لك رمز تحقق على جوالك. عطني إياه لاهنت.</p><form id="otpForm"><input type="number" required><button type="submit">تأكيد</button></form>`, listenForForm: "otpForm" }, final: { agentMessage: `<p>تم التحويل. الله يبارك له.</p>`, nextStep: "end" }, end: { autoProceedTo: "end_flow" } } },
         credit_card: {
             value: { engagement: 1, cost: 2 },
             steps: {
-                start: { agentMessage: `<p>بطاقتك الائتمانية حدها 150,000 ريال والمستحق حاليًا 12,500. وش تبي تسوي؟</p>`, options: [{ text: "سداد المبلغ المستحق", nextStep: "pay_card" }] },
-                pay_card: { agentMessage: `<p>تبي أسددها من حسابك الجاري؟</p>`, options: [{ text: "نعم، سدد", nextStep: "ask_cc_otp" }] },
+                start: { agentMessage: `<p>بطاقتك الائتمانية حدها 150,000 ريال والمستحق حاليًا 12,500. وش تبي تسوي؟</p>`, options: [{ text: "سداد المبلغ المستحق", nextStep: "pay_card" }, { text: "إلغاء والعودة ↩️", action: "goBackToMenu" }] },
+                pay_card: { agentMessage: `<p>تبي أسددها من حسابك الجاري؟</p>`, options: [{ text: "نعم، سدد", nextStep: "ask_cc_otp" }, { text: "إلغاء والعودة ↩️", action: "goBackToMenu" }] },
                 ask_cc_otp: { value: { security: 1 }, isSecure: true, agentMessage: `<p>أبشر. لتأكيد سداد المبلغ، أرسلت لك رمز تحقق على جوالك.</p><form id="ccOtpForm"><input type="number" required><button type="submit">تأكيد السداد</button></form>`, listenForForm: "ccOtpForm" },
                 final_pay: { agentMessage: `<p>تم السداد. يومك سعيد طال عمرك.</p>`, nextStep: "end" },
                 end: { autoProceedTo: "end_flow" }
@@ -294,65 +292,141 @@
                 end: { autoProceedTo: "end_flow" } 
             } 
         },
-        emergency_cash: { value: { engagement: 1, cost: 10, revenue: 50000 }, steps: { start: { agentMessage: `<p>سلامات يا فيصل، أبشر بالفزعة. كم المبلغ اللي تحتاجه بشكل عاجل؟</p><form id="cashForm"><input type="number" required><button type="submit">ابحث عن حل</button></form>`, listenForForm: "cashForm" }, offer: { agentMessage: `<p>لقيت لك حل. نقدر نوفر لك 50,000 ريال كتمويل مرابحة فوري بهامش ربح بسيط جدًا. يوصلك المبلغ خلال 5 دقايق بعد المصادقة. هل الشروط واضحة وموافق؟</p>`, options: [{ text: "نعم، موافق ومحتاج المبلغ", nextStep: "ask_otp" }] }, ask_otp: { value: { security: 1 }, isSecure: true, agentMessage: `<p>ممتاز. لتأكيد طلبك مبدئيًا، أرسلت لك رمز تحقق على جوالك.</p><form id="cashOtpForm"><input type="number" required><button type="submit">تأكيد</button></form>`, listenForForm: "cashOtpForm" }, nafath_auth: { value: { security: 1 }, isSecure: true, autoProceedTo: "final", agentMessage: `<p>شكرًا لك. الآن للمصادقة النهائية والأكثر أمانًا حسب تعليمات البنك المركزي، تحقق من هويتك عبر "نفاذ".</p><div class="nafath-prompt"><p>افتح تطبيق نفاذ واختر الرقم:</p><div class="nafath-number">${Math.floor(10 + Math.random() * 90)}</div></div>` }, final: { agentMessage: `<p><strong>تمت المصادقة والموافقة المبدئية.</strong></p><p>لضمان أعلى درجات الحماية، سيقوم مدير علاقتك بالتواصل معك الآن للتأكيد النهائي قبل إيداع المبلغ في حسابك.</p>`, nextStep: "end" }, end: { autoProceedTo: "end_flow" } } },
+        emergency_cash: { 
+            value: { engagement: 1, cost: 5, revenue: 50000 }, 
+            steps: { 
+                start: { 
+                    agentMessage: `<p>أزهل!. الوصي الرقمي هنا لمساعدتك. هل تملك ودائع أو أصول لدينا، أم أن راتبك يتم إيداعه في هذا البنك؟</p>`, 
+                    options: [{ text: "ودائع وأصول", nextStep: "asset_path" }, { text: "راتبي لدى البنك", nextStep: "salary_path" }, { text: "إلغاء والعودة ↩️", action: "goBackToMenu" }] 
+                },
+                asset_path: { 
+                    value: { revenue: 100000 },
+                    agentMessage: `<p>ممتاز. بناءً على أصولك التي تبلغ <strong>1,310,000 ريال</strong>، يمكننا توفير سيولة طارئة بقيمة <strong>50,000 ريال</strong> كدفعة مقدمة بضمان جزء من أسهمك، وبـ <strong>0% فائدة</strong>. هل توافق؟</p>`, 
+                    options: [{ text: "موافق", nextStep: "ask_otp" }, { text: "إلغاء والعودة ↩️", action: "goBackToMenu" }]
+                },
+                salary_path: { 
+                    value: { revenue: 25000 },
+                    agentMessage: `<p>بما أن راتبك لدينا، يمكننا توفير سيولة طارئة لك على هيئة راتب مقدم بقيمة <strong>5,000 ريال</strong> بضمان راتبك، وبـ <strong>0% فائدة</strong>. المبلغ يتم إيداعه فوراً بعد المصادقة.</p>`, 
+                    options: [{ text: "موافق", nextStep: "ask_otp" }, { text: "إلغاء والعودة ↩️", action: "goBackToMenu" }]
+                },
+                ask_otp: { 
+                    value: { security: 1 }, 
+                    isSecure: true, 
+                    agentMessage: `<p>أبشر. لتأكيد طلبك، أرسلت لك رمز تحقق على جوالك. فضلاً أدخله.</p><form id="cashOtpForm"><input type="number" required><button type="submit">تأكيد</button></form>`, 
+                    listenForForm: "cashOtpForm" 
+                },
+                final_approval: { 
+                    agentMessage: `<p><strong>تمت الموافقة المبدئية.</strong></p><p>تم إرسال طلبك مباشرةً إلى <strong>نظام مدير علاقتك (CRM)</strong> للمراجعة والموافقة النهائية، لضمان أعلى مستويات الأمان.</p>`, 
+                    nextStep: "end" 
+                }, 
+                end: { autoProceedTo: "end_flow" } 
+            } 
+        },
         
         family_management: {
             value: { engagement: 1, cost: 6 },
             steps: {
                 start: { 
-                    agentMessage: `<p>أهلاً بك في خدمة إدارة شؤون العائلة. وش حاب تسوي اليوم؟</p>`, 
+                    agentMessage: `<p>أهلاً بك في خدمة <strong>إدارة أمور الأهل</strong>. وش حاب تسوي اليوم؟</p>`, 
                     options: [
-                        { text: "إضافة فرد جديد للعائلة", nextStep: "add_member_ask_type" },
+                        { text: "إضافة فرد جديد لبرنامج التميز", nextStep: "add_member_ask_type" },
                         { text: "تخصيص مصروف لأحد الأفراد", nextStep: "allowance_select_member" },
-                        { text: "إضافة فرد لبرنامج التميز", nextStep: "diamond_check_self_status" }
+                        { text: "إلغاء والعودة ↩️", action: "goBackToMenu" }
                     ]
                 },
-                diamond_check_self_status: { agentMessage: `<p>عفواً، هذه الميزة حصرية لعملاء التميز. جارٍ التحقق من حالة حسابك...</p>`, autoProceedTo: "diamond_path_for_diamond_client" },
-                diamond_path_for_diamond_client: { agentMessage: `<p>بما أنك عميل تميز، يمكنك إضافة أفراد عائلتك للبرنامج. من تود إضافته؟</p>`, options: [ { text: "نورة (الزوجة)", nextStep: "diamond_final_added" }, { text: "خالد (الابن)", nextStep: "diamond_final_added" } ] },
-                diamond_final_added: { agentMessage: `<p>ممتاز. تم إضافة الفرد بنجاح لبرنامج التميز.</p>`, nextStep: "end" },
-                add_member_ask_type: { agentMessage: `<p>هل الفرد المراد إضافته بالغ أم قاصر؟</p>`, options: [ { text: "بالغ", nextStep: "add_adult_ask_id" }, { text: "قاصر", nextStep: "add_minor_ask_id" }] },
-                add_adult_ask_id: { agentMessage: `<p>ممتاز. بما أن العضو بالغ، يجب أن يكون لديه حساب لدينا. فضلاً، أدخل رقم هويته لإرسال طلب الانضمام.</p><form id="adultIdForm"><input type="number" placeholder="رقم هوية العضو البالغ" required><button type="submit">إرسال طلب</button></form>`, listenForForm: "adultIdForm" },
-                add_adult_wait_approval: { value: { security: 1 }, isSecure: true, agentMessage: `<p>أرسلنا رمز تحقق لصاحب الهوية. بمجرد موافقته، سيتم إضافته فوراً إلى حساب عائلتك.</p>`, nextStep: "end" },
-                add_minor_ask_id: { agentMessage: `<p>لإضافة ابنك القاصر، يرجى إدخال رقم هويته لفتح حساب تابع لك.</p><form id="minorIdForm"><input type="number" placeholder="رقم هوية القاصر" required><button type="submit">فتح حساب وإضافة</button></form>`, listenForForm: "minorIdForm" },
-                add_minor_final: { agentMessage: `<p>تم بنجاح فتح حساب وإضافة القاصر لعائلتك.</p>`, nextStep: "end" },
-                allowance_select_member: { agentMessage: `<p>لمن تريد تخصيص مصروف؟</p>`, options: [ { text: "دانه (الابنة)", nextStep: "allowance_ask_amount" }, { text: "سلطان (الابن)", nextStep: "allowance_ask_amount" }, { text: "نورة (الزوجة)", nextStep: "allowance_ask_amount" } ] },
-                allowance_ask_amount: { agentMessage: `<p>كم المبلغ الذي تريد تخصيصه؟</p><form id="allowanceAmountForm"><input type="number" placeholder="مثال: 500" required><button type="submit">التالي</button></form>`, listenForForm: "allowanceAmountForm" },
-                allowance_ask_frequency: { agentMessage: `<p>وكل متى يتم التحويل؟</p><form id="allowanceFreqForm"><select required><option value="weekly">أسبوعيًا</option><option value="monthly" selected>شهريًا</option><option value="yearly">سنويًا</option></select><button type="submit">التالي</button></form>`, listenForForm: "allowanceFreqForm" },
-                allowance_ask_account: { agentMessage: `<p>من أي حساب تريد خصم المبلغ؟</p>`, options: [ { text: "الحساب الجاري (ينتهي بـ 1234)", nextStep: "allowance_ask_otp" }, { text: "حساب الادخار (ينتهي بـ 5678)", nextStep: "allowance_ask_otp" } ] },
-                allowance_ask_otp: { value: { security: 1 }, isSecure: true, agentMessage: `<p>لتأكيد تفعيل هذا المصروف الدوري، أرسلنا رمز تحقق إلى جوالك.</p><form id="allowanceOtpForm"><input type="number" required><button type="submit">تأكيد</button></form>`, listenForForm: "allowanceOtpForm" },
-                allowance_final: { agentMessage: `<p>تم بنجاح. سيتم تحويل المصروف بشكل دوري.</p>`, nextStep: "end" },
+                add_member_ask_type: { 
+                    agentMessage: `<p>هل الفرد المراد إضافته بالغ أم قاصر؟</p>`, 
+                    options: [ 
+                        { text: "بالغ", nextStep: "add_adult_ask_id" }, 
+                        { text: "قاصر", nextStep: "add_minor_ask_id" },
+                        { text: "إلغاء والعودة ↩️", action: "goBackToMenu" }
+                    ] 
+                },
+                add_adult_ask_id: { 
+                    agentMessage: `<p>ممتاز. بما أن العضو بالغ، يجب أن يكون لديه حساب لدينا. فضلاً، أدخل رقم هويته لإرسال طلب الانضمام.</p><form id="adultIdForm"><input type="number" placeholder="رقم هوية العضو البالغ" required><button type="submit">إرسال طلب</button></form>`, 
+                    listenForForm: "adultIdForm" 
+                },
+                add_adult_upload_doc: { 
+                    agentMessage: `<p>ممتاز. لإثبات صلة القرابة، فضلاً قم برفع <strong>صورة بطاقة العائلة أو صك الولاية</strong>.</p><form id="adultUploadForm"><input type="file" required><button type="submit">رفع الملف</button></form>`,
+                    listenForForm: "adultUploadForm"
+                },
+                add_minor_ask_id: { 
+                    agentMessage: `<p>لإضافة ابنك القاصر، يرجى إدخال رقم هويته.</p><form id="minorIdForm"><input type="number" placeholder="رقم هوية القاصر" required><button type="submit">التالي</button></form>`, 
+                    listenForForm: "minorIdForm" 
+                },
+                add_minor_upload_doc: { 
+                    agentMessage: `<p>تمام. لإثبات صلة القرابة، فضلاً قم برفع <strong>صورة بطاقة العائلة أو صك الولاية</strong>.</p><form id="minorUploadForm"><input type="file" required><button type="submit">رفع الملف</button></form>`, 
+                    listenForForm: "minorUploadForm" 
+                },
+                allowance_select_member: { 
+                    agentMessage: `<p>لمن تريد تخصيص مصروف؟</p>`, 
+                    options: [ 
+                        { text: "دانه (الابنة)", nextStep: "allowance_ask_amount" }, 
+                        { text: "سلطان (الابن)", nextStep: "allowance_ask_amount" }, 
+                        { text: "نورة (الزوجة)", nextStep: "allowance_ask_amount" },
+                        { text: "إلغاء والعودة ↩️", action: "goBackToMenu" }
+                    ] 
+                },
+                allowance_ask_amount: { 
+                    agentMessage: `<p>كم المبلغ الذي تريد تخصيصه؟</p><form id="allowanceAmountForm"><input type="number" placeholder="مثال: 500" required><button type="submit">التالي</button></form>`, 
+                    listenForForm: "allowanceAmountForm" 
+                },
+                allowance_ask_frequency: { 
+                    agentMessage: `<p>وكل متى يتم التحويل؟</p><form id="allowanceFreqForm"><select required><option value="weekly">أسبوعيًا</option><option value="monthly" selected>شهريًا</option><option value="yearly">سنويًا</option></select><button type="submit">التالي</button></form>`, 
+                    listenForForm: "allowanceFreqForm" 
+                },
+                allowance_ask_account: { 
+                    agentMessage: `<p>من أي حساب تريد خصم المبلغ؟</p>`, 
+                    options: [ 
+                        { text: "الحساب الجاري (ينتهي بـ 1234)", nextStep: "allowance_ask_otp" }, 
+                        { text: "حساب الادخار (ينتهي بـ 5678)", nextStep: "allowance_ask_otp" },
+                        { text: "إلغاء والعودة ↩️", action: "goBackToMenu" }
+                    ] 
+                },
+                allowance_ask_otp: { 
+                    value: { security: 1 }, 
+                    isSecure: true, 
+                    agentMessage: `<p>لتأكيد تفعيل هذا المصروف الدوري، أرسلنا رمز تحقق إلى جوالك.</p><form id="allowanceOtpForm"><input type="number" required><button type="submit">تأكيد</button></form>`, 
+                    listenForForm: "allowanceOtpForm" 
+                },
+                allowance_final: { 
+                    agentMessage: `<p>تم بنجاح. سيتم تحويل المصروف بشكل دوري.</p>`, 
+                    nextStep: "end" 
+                },
+                final_approval: {
+                    agentMessage: `<p><strong>تم إرسال طلبك ومستنداتك بنجاح.</strong></p><p>تم إرسالها مباشرةً إلى <strong>نظام مدير علاقتك (CRM)</strong> للمراجعة والموافقة النهائية، لضمان أعلى مستويات الأمان.</p>`,
+                    nextStep: "end"
+                },
                 end: { autoProceedTo: "end_flow" }
             }
         },
-        // ** التعديل هنا: إضافة المتغيرات الديناميكية للرسائل **
-        zakat_advisor: { value: { engagement: 1, cost: 5 }, steps: { start: { agentMessage: `<p>أبشر، لحساب زكاتك، كم متوسط السيولة النقدية لديك هذا العام؟</p><form id="zakatForm"><input type="number" placeholder="أدخل المبلغ بالريال" required><button type="submit">احسب الزكاة</button></form>`, listenForForm: "zakatForm" }, calculate: { agentMessage: `<p>الله يتقبل. بناءً على المبلغ، زكاتك المستحقة هي <strong>{{zakatResult}} ريال</strong>. هل تبي نوزعها الحين على الجمعيات المعتمدة في منصة إحسان؟</p>`, options: [{text: "نعم، وزعها", nextStep:"ask_zakat_otp"}] }, ask_zakat_otp: { value: { security: 1 }, isSecure: true, agentMessage: `<p>لتأكيد توزيع مبلغ الزكاة، أرسلت لك رمز تحقق على جوالك.</p><form id="zakatOtpForm"><input type="number" required><button type="submit">تأكيد</button></form>`, listenForForm: "zakatOtpForm" }, final: { agentMessage: `<p>تم توزيع مبلغ الزكاة بنجاح.</p>`, nextStep: "end" }, end: { autoProceedTo: "end_flow" } } },
-        event_planner: { value: { engagement: 1, cost: 5, revenue: 50 }, steps: { start: { agentMessage: `<p>أبشر. وش المناسبة اللي نخطط لها؟</p><form id="eventForm"><input type="text" placeholder="مثال: سفرة لندن" required><button type="submit">التالي</button></form>`, listenForForm: "eventForm" }, ask_date: { agentMessage: `<p>ممتاز. ومتى موعد "{{eventName}}" تقريبًا؟</p><form id="dateForm"><input type="date" required><button type="submit">التالي</button></form>`, listenForForm: "dateForm" }, ask_budget: { agentMessage: `<p>وكم الميزانية التقريبية اللي حاطها في بالك؟</p><form id="budgetForm"><input type="number" placeholder="20000" required><button type="submit">اقترح خطة</button></form>`, listenForForm: "budgetForm" }, propose_plan: { agentMessage: `<p>تمام. باقي على سفرتك 4 أشهر وميزانيتك 20,000 ريال. وش رأيك ننشئ لك "حصالة {{eventName}}" ونبدأ نخصم لها 5,000 ريال شهريًا من حسابك؟</p>`, options: [{text: "نعم، اعتمد الخطة", nextStep: "ask_friends"}, {text: "لا، بجمع المبلغ بنفسي", nextStep: "end"}] }, ask_friends: { agentMessage: `<p>هل فيه أصدقاء سيشاركون في هذه السفرة؟</p>`, options: [{ text: "نعم، معي أصدقاء", nextStep: "invite_friend_ask_details" }, {text: "لا، السفرة لي فقط", nextStep: "ask_plan_otp"}] }, invite_friend_ask_details: { agentMessage: `<p>ممتاز. لتسهيل "القطة" ودعوة أصدقائك للحساب المشترك، أدخل بيانات أول صديق:</p><form id="friendIdForm"><input type="text" placeholder="اسم الصديق" required><input type="number" placeholder="رقم هوية الصديق" required><button type="submit">تحقق وادعُ</button></form>`, listenForForm: "friendIdForm" }, invite_existing_friend: { agentMessage: `<p>رائع! صديقك لديه حساب لدينا. أرسلنا له دعوة الآن للانضمام لحساب السفرة المشترك. هل تريد إضافة صديق آخر؟</p>`, options: [{ text: "نعم، أضف صديق آخر", nextStep: "invite_friend_ask_details"}, {text: "لا، اكتفينا", nextStep: "joint_account_ask_otp"}] }, invite_new_friend_prompt: { value: { revenue: 1 }, agentMessage: `<p>صديقك لا يملك حساباً لدينا بعد. يمكنه فتح حساب رقمي بكل سهولة خلال دقائق للانضمام إليكم! أرسلنا له رابط لفتح الحساب. هل تريد إضافة صديق آخر؟</p>`, options: [{ text: "نعم، أضف صديق آخر", nextStep: "invite_friend_ask_details"}, {text: "لا، اكتفينا", nextStep: "joint_account_ask_otp"}] }, joint_account_ask_otp: { value: { security: 1 }, isSecure: true, agentMessage: `<p>لأمانكم، وتأكيد إنشاء هذا الحساب المشترك، أرسلنا رمز تحقق على جوالك.</p><form id="jointOtpForm"><input type="number" required><button type="submit">تأكيد الإنشاء</button></form>`, listenForForm: "jointOtpForm" }, ask_plan_otp: { value: { security: 1 }, isSecure: true, agentMessage: `<p>لتأكيد إنشاء هذه الخطة وخصم أول مبلغ، هذا إجراء يتطلب رمز تحقق أرسلناه على جوالك.</p><form id="planOtpForm"><input type="number" required><button type="submit">تأكيد</button></form>`, listenForForm: "planOtpForm" }, final: { agentMessage: `<p>تم اعتماد الخطة. ريّح بالك، وموضوع ميزانية السفر عندي.</p>`, nextStep: "end" }, end: { autoProceedTo: "end_flow" } } },
-        digital_vault: { value: { engagement: 1, cost: 3 }, steps: { start: { agentMessage: `<p>أهلاً بك في خزنتك الرقمية الآمنة. هنا تقدر تحفظ كل وثائقك المهمة.</p>`, options: [{text: "رفع وثيقة جديدة", nextStep: "upload"}] }, upload: { agentMessage: `<p>ممتاز. اختر الوثيقة اللي تبي ترفعها.</p><form id="vaultForm"><input type="file" required><button type="submit">رفع وحفظ</button></form>`, listenForForm: "vaultForm"}, final: { agentMessage: `<p>تم حفظ الوثيقة في خزنتك بنجاح وبتشفير كامل.</p>`, nextStep: "end"}, end: { autoProceedTo: "end_flow" } } },
-        proactive_rent: { value: { engagement: 1, cost: 2 }, steps: { start: { isProactive: true, agentMessage: `<p>صباح الخير فيصل، لاحظت إنك تحول الإيجار يدويًا. وش رأيك نريّحك ونجدولها لك؟</p>`, options: [{ text: "نعم، فعّلها", nextStep: "final_activate" }, { text: "لا، ذكرني فقط", nextStep: "final_remind" }, { text: "تجاهل", action: "goBackToMenu" }] }, final_activate: { agentMessage: `<p>ممتاز. تم تفعيل الجدول.</p>`, nextStep: "end" }, final_remind: { agentMessage: `<p>أبشر. سجلت عندي أذكرك.</p>`, nextStep: "end" }, end: { autoProceedTo: "end_flow" } } }
+        
+        zakat_advisor: { value: { engagement: 1, cost: 5 }, steps: { start: { agentMessage: `<p>أبشر، لحساب زكاتك، كم متوسط السيولة النقدية لديك هذا العام؟</p><form id="zakatForm"><input type="number" placeholder="أدخل المبلغ بالريال" required><button type="submit">احسب الزكاة</button></form>`, listenForForm: "zakatForm" }, calculate: { agentMessage: `<p>الله يتقبل. بناءً على المبلغ، زكاتك المستحقة هي <strong>{{zakatResult}} ريال</strong>. هل تبي نوزعها الحين على الجمعيات المعتمدة في منصة إحسان؟</p>`, options: [{text: "نعم، وزعها", nextStep:"ask_zakat_otp"}, { text: "إلغاء والعودة ↩️", action: "goBackToMenu" }] }, ask_zakat_otp: { value: { security: 1 }, isSecure: true, agentMessage: `<p>لتأكيد توزيع مبلغ الزكاة، أرسلت لك رمز تحقق على جوالك.</p><form id="zakatOtpForm"><input type="number" required><button type="submit">تأكيد</button></form>`, listenForForm: "zakatOtpForm" }, final: { agentMessage: `<p>تم توزيع مبلغ الزكاة بنجاح.</p>`, nextStep: "end" }, end: { autoProceedTo: "end_flow" } } },
+        event_planner: { value: { engagement: 1, cost: 5, revenue: 50 }, steps: { start: { agentMessage: `<p>أبشر. وش المناسبة اللي نخطط لها؟</p><form id="eventForm"><input type="text" placeholder="مثال: سفرة لندن" required><button type="submit">التالي</button></form>`, listenForForm: "eventForm" }, ask_date: { agentMessage: `<p>ممتاز. ومتى موعد "{{eventName}}" تقريبًا؟</p><form id="dateForm"><input type="date" required><button type="submit">التالي</button></form>`, listenForForm: "dateForm" }, ask_budget: { agentMessage: `<p>وكم الميزانية التقريبية اللي حاطها في بالك؟</p><form id="budgetForm"><input type="number" placeholder="20000" required><button type="submit">اقترح خطة</button></form>`, listenForForm: "budgetForm" }, propose_plan: { agentMessage: `<p>تمام. باقي على سفرتك 4 أشهر وميزانيتك {{budget}} ريال. وش رأيك ننشئ لك "حصالة {{eventName}}" ونبدأ نخصم لها {{monthly_deduction}} ريال شهريًا من حسابك؟</p>`, options: [{text: "نعم، اعتمد الخطة", nextStep: "ask_friends"}, {text: "لا، بجمع المبلغ بنفسي", nextStep: "end"}, { text: "إلغاء والعودة ↩️", action: "goBackToMenu" }] }, ask_friends: { agentMessage: `<p>هل فيه أصدقاء سيشاركون في هذه السفرة؟</p>`, options: [{ text: "نعم، معي أصدقاء", nextStep: "invite_friend_ask_details" }, {text: "لا، السفرة لي فقط", nextStep: "ask_plan_otp"}, { text: "إلغاء والعودة ↩️", action: "goBackToMenu" }] }, invite_friend_ask_details: { agentMessage: `<p>ممتاز. لإرسال دعوة لهم، أرسل لهم هذا الرابط الشخصي الآمن:</p><div class="chat-bubble agent-bubble" style="text-align:center; direction:ltr;"><a href="#" style="color:#007bff;">bank.com/invite/{{invite_id}}</a><br><p style="margin-top:10px; font-size:14px;">(اضغط على الرابط لنسخه تلقائياً)</p></div><p>بمجرد فتحهم للحساب <strong>وإعطاء الموافقة على الربط</strong>، سيتم ربطهم تلقائياً بخطة السفرة.</p>`, options: [{ text: "أضف صديق آخر", nextStep: "invite_friend_ask_details"}, {text: "اكتفينا", nextStep: "joint_account_ask_otp"}, { text: "إلغاء والعودة ↩️", action: "goBackToMenu" }] }, joint_account_ask_otp: { value: { security: 1 }, isSecure: true, agentMessage: `<p>لأمانكم، وتأكيد إنشاء هذا الحساب المشترك، أرسلنا رمز تحقق على جوالك.</p><form id="jointOtpForm"><input type="number" required><button type="submit">تأكيد الإنشاء</button></form>`, listenForForm: "jointOtpForm" }, ask_plan_otp: { value: { security: 1 }, isSecure: true, agentMessage: `<p>لتأكيد إنشاء هذه الخطة وخصم أول مبلغ، هذا إجراء يتطلب رمز تحقق أرسلناه على جوالك.</p><form id="planOtpForm"><input type="number" required><button type="submit">تأكيد</button></form>`, listenForForm: "planOtpForm" }, final: { agentMessage: `<p>تم اعتماد الخطة. ريّح بالك، وموضوع ميزانية السفر عندي.</p><p>تم تفعيل أمر مستديم لخصم المبلغ الشهري لحساب السفرة.</p><p>سنرسل لك ولأصدقائك تذكيرات شهرية قبل موعد الخصم.</p>`, nextStep: "end" }, end: { autoProceedTo: "end_flow" } } },
+        digital_vault: { value: { engagement: 1, cost: 3 }, steps: { start: { agentMessage: `<p>أهلاً بك في خزنتك الرقمية الآمنة. هنا تقدر تحفظ كل وثائقك المهمة.</p>`, options: [{text: "رفع وثيقة جديدة", nextStep: "upload"}, { text: "إلغاء والعودة ↩️", action: "goBackToMenu" }] }, upload: { agentMessage: `<p>ممتاز. اختر الوثيقة اللي تبي ترفعها.</p><form id="vaultForm"><input type="file" required><button type="submit">رفع وحفظ</button></form>`, listenForForm: "vaultForm"}, final: { agentMessage: `<p>تم حفظ الوثيقة في خزنتك بنجاح وبتشفير كامل.</p>`, nextStep: "end"}, end: { autoProceedTo: "end_flow" } } },
+        proactive_rent: { value: { engagement: 1, cost: 2 }, steps: { start: { isProactive: true, agentMessage: `<p>ارحب يا فيصل، لاحظت إنك تحول الإيجار يدويًا. وش رأيك نريّحك ونجدولها لك؟</p>`, options: [{ text: "نعم، فعّلها", nextStep: "final_activate" }, { text: "لا، ذكرني فقط", nextStep: "final_remind" }, { text: "تجاهل", action: "goBackToMenu" }] }, final_activate: { agentMessage: `<p>ممتاز. تم تفعيل الجدول.</p>`, nextStep: "end" }, final_remind: { agentMessage: `<p>أبشر. سجلت عندي أذكرك.</p>`, nextStep: "end" }, end: { autoProceedTo: "end_flow" } } }
     };
     
-    // --- المحرك الرئيسي ---
     const agentSection = document.getElementById('agentSection'), servicesMenu = document.getElementById('services-menu'), chatView = document.getElementById('chat-view'), chatContainer = document.getElementById('chat-container');
     let currentState = {};
-    let sessionData = {}; // **جديد**: لتخزين البيانات التفاعلية
+    let sessionData = {};
     let proactiveMessageShown = false;
     let sessionKPIs = { cost: 0, revenue: 0, engagement: 0, security: 0 };
-
+    
     function trackTopicKPI(topic) { const topicData = conversationEngine[topic]; if (!topicData || !topicData.value) return; const topicValue = topicData.value; sessionKPIs.engagement += topicValue.engagement || 0; sessionKPIs.cost += topicValue.cost || 0; sessionKPIs.revenue += topicValue.revenue || 0; }
     function trackStepKPI(topic, step) { if (!topic || !conversationEngine[topic] || !conversationEngine[topic].steps[step]) return; const stepData = conversationEngine[topic].steps[step]; if (!stepData.value) return; const stepValue = stepData.value; sessionKPIs.security += stepValue.security || 0; }
-    function toggleAgent() { agentSection.classList.toggle('active'); if (agentSection.classList.contains('active')) { if (!proactiveMessageShown) { /* startProactiveChat('proactive_rent'); proactiveMessageShown = true; */ } else { goBackToMenu(); } } }
-    function goBackToMenu(){ chatView.style.display = 'none'; servicesMenu.style.display = 'block'; currentState = {}; sessionData = {}; } // **تعديل**: مسح البيانات عند العودة
+    function toggleAgent() { agentSection.classList.toggle('active'); if (agentSection.classList.contains('active')) { if (!proactiveMessageShown) { startProactiveChat('proactive_rent'); proactiveMessageShown = true; } else { goBackToMenu(); } } }
+    function goBackToMenu(){ chatView.style.display = 'none'; servicesMenu.style.display = 'block'; currentState = {}; sessionData = {}; }
     function appendMessage(content, type, isSecure = false, isProactive = false){ const bubble = document.createElement('div'); let classNames = `chat-bubble ${type}-bubble`; if (isSecure) classNames += ' secure'; if (isProactive) classNames += ' proactive'; bubble.className = classNames; bubble.innerHTML = content; chatContainer.appendChild(bubble); chatContainer.scrollTop = chatContainer.scrollHeight; const form = bubble.querySelector('form'); if(form){ form.addEventListener('submit', (e) => handleFormSubmit(e, form.id)); } }
     function startProactiveChat(topic) { currentState = { topic: topic, step: 'start' }; trackTopicKPI(topic); const initialStepData = conversationEngine[topic].steps.start; servicesMenu.style.display = 'none'; chatView.style.display = 'block'; chatContainer.innerHTML = ''; setTimeout(() => renderAgentResponse(initialStepData), 500); }
     function startChatTopic(topic){ currentState = { topic: topic, step: 'start' }; trackTopicKPI(topic); const initialStepData = conversationEngine[topic].steps.start; const userMessage = document.querySelector(`div[onclick="startChatTopic('${topic}')"]`).innerText; servicesMenu.style.display = 'none'; chatView.style.display = 'block'; chatContainer.innerHTML = ''; appendMessage(userMessage, 'user'); setTimeout(() => renderAgentResponse(initialStepData), 1000); }
     function handleOptionClick(nextStep, userText, action){ if(action === 'goBackToMenu'){ goBackToMenu(); return; } currentState.step = nextStep; trackStepKPI(currentState.topic, currentState.step); appendMessage(userText, 'user'); setTimeout(() => { const stepData = conversationEngine[currentState.topic].steps[currentState.step]; renderAgentResponse(stepData); }, 1000); }
     
-    // ** تعديل **: دالة معالجة النماذج أصبحت الآن ذكية
     function handleFormSubmit(event, formId){
         event.preventDefault();
         let userMessage = 'تم إدخال البيانات';
         let nextStep;
-
+        
         if (formId === 'eventForm') {
             const eventInput = event.target.querySelector('input[type="text"]');
             sessionData.eventName = eventInput.value || "المناسبة";
@@ -372,18 +446,34 @@
             } else {
                 nextStep = 'invite_new_friend_prompt';
             }
+        } else if (formId === 'adultUploadForm' || formId === 'minorUploadForm'){
+            userMessage = "تم رفع الملف";
+            nextStep = 'final_approval';
+        } else if (formId === 'budgetForm') {
+            const budgetInput = event.target.querySelector('input[type="number"]');
+            sessionData.budget = parseFloat(budgetInput.value) || 20000;
+            sessionData.monthly_deduction = Math.round(sessionData.budget / 4);
+            userMessage = `ميزانية ${sessionData.budget.toLocaleString()} ريال`;
+            nextStep = 'propose_plan';
+        } else if (formId === 'adultIdForm') {
+            const idInput = event.target.querySelector('input[type="number"]');
+            userMessage = `رقم الهوية: ${idInput.value}`;
+            nextStep = 'add_adult_upload_doc';
+        } else if (formId === 'minorIdForm') {
+            const idInput = event.target.querySelector('input[type="number"]');
+            userMessage = `رقم الهوية: ${idInput.value}`;
+            nextStep = 'add_minor_upload_doc';
         } else {
-             const nextStepMap = {
+            const nextStepMap = {
                 transferForm: 'ask_otp', otpForm: 'final', ccOtpForm: 'final_pay',
-                cashForm: 'offer', cashOtpForm: 'nafath_auth', 
-                adultIdForm: 'add_adult_wait_approval', minorIdForm: 'add_minor_final',
+                cashForm: 'offer', cashOtpForm: 'final_approval', 
                 allowanceAmountForm: 'allowance_ask_frequency', allowanceFreqForm: 'allowance_ask_account',
                 allowanceOtpForm: 'allowance_final', zakatOtpForm: 'final', 
-                dateForm: 'ask_budget', budgetForm: 'propose_plan', 
+                dateForm: 'ask_budget', 
                 jointOtpForm: 'final', planOtpForm: 'final', 
                 vaultForm: 'final'
-             };
-             nextStep = nextStepMap[formId];
+            };
+            nextStep = nextStepMap[formId];
         }
         
         if (nextStep) {
@@ -397,7 +487,6 @@
         }
     }
 
-    // ** تعديل **: دالة عرض الرسائل الآن تستبدل المتغيرات
     function renderAgentResponse(stepData){ 
         let agentHtml = stepData.agentMessage || ''; 
         
@@ -407,9 +496,25 @@
         if (sessionData.zakatResult) {
             agentHtml = agentHtml.replace(/\{\{zakatResult\}\}/g, sessionData.zakatResult);
         }
+        if (sessionData.budget) {
+            agentHtml = agentHtml.replace(/\{\{budget\}\}/g, sessionData.budget.toLocaleString());
+        }
+        if (sessionData.monthly_deduction) {
+            agentHtml = agentHtml.replace(/\{\{monthly_deduction\}\}/g, sessionData.monthly_deduction.toLocaleString());
+        }
+        // Unique ID for invite link
+        if (currentState.topic === 'event_planner' && currentState.step === 'invite_friend_ask_details') {
+            const invite_id = Math.random().toString(36).substring(2, 10);
+            agentHtml = agentHtml.replace(/\{\{invite_id\}\}/g, invite_id);
+        }
 
         if(stepData.options){ 
-            const optionsHtml = stepData.options.map(opt => `<button class="service-button" style="width:100%; margin-bottom:10px;" onclick="handleOptionClick('${opt.nextStep}', '${opt.text}', '${opt.action || ''}')">${opt.text}</button>`).join(''); 
+            const optionsHtml = stepData.options.map(opt => {
+                if(opt.action === 'goBackToMenu') {
+                    return `<button class="service-button" style="width:100%; margin-bottom:10px; background-color: #f8d7da; border-color: #f5c6cb; color: #721c24;" onclick="handleOptionClick('${opt.nextStep}', '${opt.text}', '${opt.action || ''}')">${opt.text}</button>`;
+                }
+                return `<button class="service-button" style="width:100%; margin-bottom:10px;" onclick="handleOptionClick('${opt.nextStep}', '${opt.text}', '${opt.action || ''}')">${opt.text}</button>`;
+            }).join(''); 
             agentHtml += `<div class="chat-options-container" style="margin-top:15px;">${optionsHtml}</div>`; 
         } 
         appendMessage(agentHtml, 'agent', stepData.isSecure, stepData.isProactive); 
@@ -431,7 +536,32 @@
         } 
     }
 
-    const modal = document.getElementById('dashboardModal'); function showDashboard() { document.getElementById('kpi-cost').innerText = `~${sessionKPIs.cost}`; document.getElementById('kpi-revenue').innerText = `${sessionKPIs.revenue.toLocaleString()} ريال`; document.getElementById('kpi-engagement').innerText = sessionKPIs.engagement; document.getElementById('kpi-security').innerText = sessionKPIs.security; modal.style.display = "block"; } function closeDashboard() { modal.style.display = "none"; } function resetKPIs() { sessionKPIs = { cost: 0, revenue: 0, engagement: 0, security: 0 }; showDashboard(); } window.onclick = function(event) { if (event.target == modal) { modal.style.display = "none"; } }
+    const modal = document.getElementById('dashboardModal'); 
+    function showDashboard() { 
+        document.getElementById('kpi-cost').innerText = `~${sessionKPIs.cost}`; 
+        document.getElementById('kpi-revenue').innerText = `${sessionKPIs.revenue.toLocaleString()} ريال`; 
+        document.getElementById('kpi-engagement').innerText = sessionKPIs.engagement; 
+        document.getElementById('kpi-security').innerText = sessionKPIs.security; 
+        modal.style.display = "block"; 
+    } 
+    function closeDashboard() { modal.style.display = "none"; } 
+    function resetKPIs() { 
+        sessionKPIs = { cost: 0, revenue: 0, engagement: 0, security: 0 }; 
+        showDashboard(); 
+    } 
+    window.onclick = function(event) { if (event.target == modal) { modal.style.display = "none"; } }
+
+    function toggleAgent() {
+        agentSection.classList.toggle('active');
+        if (agentSection.classList.contains('active')) {
+            if (!proactiveMessageShown) {
+                startProactiveChat('proactive_rent');
+                proactiveMessageShown = true;
+            } else {
+                goBackToMenu();
+            }
+        }
+    }
 </script>
 
 </body>
